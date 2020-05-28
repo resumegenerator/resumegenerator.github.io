@@ -6,18 +6,51 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body{
+            body,html{
+                height: 100%;
+                display: grid;
                 font-family: Arial;
+
             }
             h1{
                 font-weight: normal;
+                padding-bottom: 100px;
+            }
+            
+            .center{
+                margin: auto;
+                text-align: center;
+                
+            }
+            .link{
+                position: relative;
+                padding-left: 86px;
+                padding-right: 120px;
+                padding-bottom: 30px;
+
+                display: table-cell;
+            }
+            .box{
+                
+                background: #d8e5f1;
+                padding: 10px;
+                float: left;
+                width: 264px;
+                height: 263px;
+                border-radius: 10px;
+                margin: 30px;
+                min-width: 6ch;
+                
             }
             #what_is{
                 font-size: 20px;
             }
-            #description{
+            .description{
                 font-size: 17px;
+                padding-top: 10px;
             }
+            
+            
             .button{
                 background-color: #0076ff;
                 border: none;
@@ -33,26 +66,36 @@
         </style>
     </head>
     <body>
-        <h1>Choose A Resume Format</h1>
-        <!-- Each div is a different resume format-->
-        <div>
-            <a class="button" href="contactinfo.html">Chronological</a>
-            <p id="what_is">What is a Chronological Resume?</p>
-            <p id="description">Most common resume format. Focuses on work experience with items listed in order of most recent to oldest.</p>
-        </div>
-            
-        <div>
-            <a class="button" href="contactinfo.html">Functional</a>
-            <p id="what_is">What is a Functional Resume?</p>
-            <p id="description">Skill-based resume format, focuses on skills that are relevant to the role being pursued.</p>
-        </div>
+        <div class="center">
+            <h1>Choose A Resume Format</h1>
 
-        <div>
-            <a class="button" href="contactinfo.html">Combination</a>
-            <p id="what_is">What is a Combination Resume?</p>
-            <p id="description">Uses both the Chronological and Functional formats.  Places equal emphasis on skills and work experience.</p>
+            <!-- Each div is a different resume format-->
+            <div class="link">
+                <a class="button" href="contactinfo.html">Chronological</a>
+            </div>
+            <div class = "link">
+                <a class="button" href="contactinfo.html">Functional</a>
+            </div>
+            <div class = "link">
+                <a class="button" href="contactinfo.html">Combination</a>
+            </div>
+
+
+            <div class="box">
+                <p id="what_is">What is a Chronological Resume?</p>
+                <p class="description">Most common resume format. Focuses on work experience with items listed in order of most recent to oldest.</p>
+            </div>
+                
+            <div class="box">
+                <p id="what_is">What is a Functional Resume?</p>
+                <p class="description">Skill-based resume format, focuses on skills that are relevant to the role being pursued.</p>
+            </div>
+
+            <div class="box">
+                <p id="what_is">What is a Combination Resume?</p>
+                <p class="description">Uses both the Chronological and Functional formats.  Places equal emphasis on skills and work experience.</p>
+            </div>
         </div>
-        
         
 
     </body>
