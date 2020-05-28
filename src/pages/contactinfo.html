@@ -6,13 +6,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body{
+            body, html{
                 font-family: Arial;
+                height: 100%;
+                display: grid;
+
             }
             h1{
                 font-weight: normal;
             }
             input{
+                margin: 4px;
                 width: 220px;
                 height: 30px;
                 font-size: 18px;
@@ -21,11 +25,28 @@
             img{
                 width: 617px;
                 height: 463px;
+                
+                
             }
-            .contact{
-                width: 617px;
-                height: 463px;
+            .center{
+                margin: auto;
+                text-align: center;
             }
+            .info{
+                position: relative;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                
+                display: grid;
+                
+            }
+            .navigation{
+                position: relative;
+                padding-top: 10px;
+                right: 100px;
+            }
+            
             .button{
                 background-color: #0076ff;
                 border: none;
@@ -35,18 +56,26 @@
                 text-align: center;
                 text-decoration: none;
                 font-size: 18px;
+                
             }
         </style>
     </head>
     <body>
-        <div>
-            <h1>What is your contact info?</h1>
-            <input type="text" id="first_name" placeholder="First Name">
-            <input type="text" id="last_name" placeholder="Last Name">
-            <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            <input type="text" id="address" placeholder="Address">
-            <a class = "button" href="format.html">Back</a>
-            <a class = "button" href="employment.html">Next</a>
+        <div class="center">
+            <div class="info">
+                <h1>What is your contact info?</h1>
+
+                <input type="text" id="first_name" placeholder="First Name">
+                <input type="text" id="last_name" placeholder="Last Name">
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="text" id="address" placeholder="Address">
+                
+            </div>
+            <div class="navigation">
+                <a class = "button" href="format.html">Back</a>
+                <a class = "button" href="employment.html">Next</a>
+            </div>
+            
         </div>
         <img src="../images/contactinfo.jpg">
     </body>

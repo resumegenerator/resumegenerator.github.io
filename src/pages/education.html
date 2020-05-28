@@ -6,22 +6,49 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body{
+            body,html{
+
                 font-family: Arial;
+                height: 100%;
+                display: grid;
             }
+            
             h1{
                 font-weight: normal;
             }
+
             input{
+                margin: 4px;
                 width: 220px;
                 height: 30px;
                 font-size: 18px;
 
             }
+
             img{
                 width: 720px;
                 height: 540px;
             }
+
+            .center{
+                margin: auto;
+                text-align: center;
+            }
+
+            .info{
+                position: relative;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                display: grid;
+            }
+
+            .navigation{
+                position: relative;
+                padding-top: 10px;
+                right: 200px;
+            }
+
             .button{
                 background-color: #0076ff;
                 border: none;
@@ -36,18 +63,20 @@
         </style>
     </head>
     <body>
-        <div>
-            <h1>What is your highest form of education?</h1>
-            
-            <input type="text" placeholder="School Name">
-            <input type="text" placeholder="GPA">
+        <div class="center">
+            <div class="info">
+                <h1>What is your highest form of education?</h1>
+                <input type="text" placeholder="School Name">
+                <input type="text" placeholder="GPA">
+                <input type="text" placeholder="Country">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="City">
+            </div>    
+            <div class="navigation">
+                <a class="button" href="employment.html">Back</a>
+                <a class="button" href="download.html">Next</a>
+            </div>
 
-            <input type="text" placeholder="Country">
-            <input type="text" placeholder="State">
-            <input type="text" placeholder="City">
-
-            <a class="button" href="employment.html">Back</a>
-            <a class="button" href="download.html">Next</a>
         </div>
         <img src="../images/education.jpg">
 </html>
